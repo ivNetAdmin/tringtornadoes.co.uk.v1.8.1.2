@@ -1,0 +1,11 @@
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Orchard.Tests.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Orchard.Tests.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Moq.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Orchard.exe
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Orchard.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Moq.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\bin\Debug\Moq.xml
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.pdb

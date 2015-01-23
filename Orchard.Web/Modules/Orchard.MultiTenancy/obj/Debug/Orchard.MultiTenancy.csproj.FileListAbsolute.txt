@@ -1,0 +1,5 @@
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.dll.config
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.pdb

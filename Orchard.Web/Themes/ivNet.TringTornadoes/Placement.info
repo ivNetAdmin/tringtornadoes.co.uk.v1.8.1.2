@@ -1,0 +1,15 @@
+<Placement>
+ <Match Path="/shop">
+    <Place Parts_Common_Body="-"/>
+    <Place Parts_Title_Summary="-"/>
+    <Place Fields_Input="-"/>
+    <Place Fields_Numeric="-"/>
+    <Place Fields_Boolean="-"/>
+    <Place Fields_Enumeration="-"/>
+   
+  </Match>
+
+ <Place Parts_Common_Metadata="-"/>
+    <Place Parts_Common_Metadata_Summary="-"/>
+
+</Placement>

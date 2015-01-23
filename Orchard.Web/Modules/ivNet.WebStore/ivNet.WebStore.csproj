@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{340C0868-9A19-4A58-8594-569A22F68718}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ivNet.WebStore</RootNamespace>
+    <AssemblyName>ivNet.WebStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\My-Club-Website\src\Orchard.Web\Modules\ivNet.Club\bin\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetwebapi\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bullets.png" />
+    <Content Include="Images\menu.webstore.png" />
+    <Content Include="Images\sprites.png" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\anjular.js" />
+    <Content Include="Scripts\anjular.min.js" />
+    <Content Include="Scripts\jquery.linq.min.js" />
+    <Content Include="Scripts\shoppingcart.js" />
+    <Content Include="Scripts\Web.config" />
+    <Content Include="Styles\checkout-summary.css" />
+    <Content Include="Styles\common.css" />
+    <Content Include="Styles\menu.webstore-admin.css" />
+    <Content Include="Styles\order.css" />
+    <Content Include="Styles\shoppingcart-widget.css" />
+    <Content Include="Styles\shoppingcart.css">
+      <DependentUpon>shoppingcart.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\shoppingcart.css.map">
+      <DependentUpon>shoppingcart.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\shoppingcart.less" />
+    <Content Include="Styles\shoppingcart.min.css">
+      <DependentUpon>shoppingcart.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\simulated-psp.css" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Views\AddressAdmin\Edit.cshtml" />
+    <Content Include="Views\Checkout.Login.cshtml" />
+    <Content Include="Views\Checkout.SelectAddress.cshtml" />
+    <Content Include="Views\Checkout.Signup.cshtml" />
+    <Content Include="Views\Checkout.Summary.cshtml" />
+    <Content Include="Views\CustomerAdmin\Edit.cshtml" />
+    <Content Include="Views\CustomerAdmin\Index.cshtml" />
+    <Content Include="Views\CustomerAdmin\ListAddresses.cshtml" />
+    <Content Include="Views\CustomerAdmin\ListOrders.cshtml" />
+    <Content Include="Views\EditorTemplates\AcceptTerms.cshtml" />
+    <Content Include="Views\EditorTemplates\Address.cshtml" />
+    <Content Include="Views\EditorTemplates\Checkbox.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\Address.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\Customer.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\Product.cshtml" />
+    <Content Include="Views\EditorTemplates\Password.cshtml" />
+    <Content Include="Views\Order.Created.cshtml" />
+    <Content Include="Views\Order.PaymentResponse.cshtml" />
+    <Content Include="Views\OrderAdmin\Edit.cshtml" />
+    <Content Include="Views\OrderAdmin\Index.cshtml" />
+    <Content Include="Views\Order\Error.cshtml" />
+    <Content Include="Views\Order\Thankyou.cshtml" />
+    <Content Include="Views\Parts.Product.AddButton.cshtml" />
+    <Content Include="Views\Parts.Product.cshtml" />
+    <Content Include="Views\Parts.Product.SummaryAdmin.cshtml" />
+    <Content Include="Views\PayPalPaymentServiceProvider\Index.cshtml" />
+    <Content Include="Views\ShoppingCartWidget.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\SignupOrLogin.cshtml" />
+    <Content Include="Views\SimulatedPaymentServiceProvider\Index.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Module.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Orchard.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Orchard.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Orchard.Framework">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Orchard.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
+    <Compile Include="Controllers\AddressAdminController.cs" />
+    <Compile Include="Controllers\Api\LogController.cs" />
+    <Compile Include="Controllers\Api\ShoppingCartController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
+    <Compile Include="Controllers\CustomerAdminController.cs" />
+    <Compile Include="Controllers\OrderAdminController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\PayPalPaymentServiceProviderController.cs" />
+    <Compile Include="Controllers\ResourceController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\SimulatedPaymentServiceProviderController.cs" />
+    <Compile Include="Drivers\AddressDriver.cs" />
+    <Compile Include="Drivers\CustomerDriver.cs" />
+    <Compile Include="Drivers\ProductDriver.cs" />
+    <Compile Include="Drivers\ShoppingCartWidgetDriver.cs" />
+    <Compile Include="Extensibility\IPaymentServiceProvider.cs" />
+    <Compile Include="Extensibility\PaymentRequest.cs" />
+    <Compile Include="Extensibility\PaymentResponse.cs" />
+    <Compile Include="Extensibility\PaymentResponseStatus.cs" />
+    <Compile Include="Handlers\AddressHandler.cs" />
+    <Compile Include="Handlers\CustomerHandler.cs" />
+    <Compile Include="Handlers\ProductHandler.cs" />
+    <Compile Include="Helpers\PayPalLog.cs" />
+    <Compile Include="Helpers\StringExtensions.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\AddressPart.cs" />
+    <Compile Include="Models\AddressRecord.cs" />
+    <Compile Include="Models\CustomerPart.cs" />
+    <Compile Include="Models\CustomerRecord.cs" />
+    <Compile Include="Models\OrderDetailRecord.cs" />
+    <Compile Include="Models\OrderRecord.cs" />
+    <Compile Include="Models\OrderStatus.cs" />
+    <Compile Include="Models\PayPalListenerModel.cs" />
+    <Compile Include="Models\PayPalPaymentInfo.cs" />
+    <Compile Include="Models\ProductPart.cs" />
+    <Compile Include="Models\ProductRecord.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
+    <Compile Include="Models\ShoppingCartItemModel.cs" />
+    <Compile Include="Models\ShoppingCartModel.cs" />
+    <Compile Include="Models\ShoppingCartWidgetPart.cs" />
+    <Compile Include="ResourceManifest.cs" />
+    <Compile Include="RoutesApi.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\DateTimeService.cs" />
+    <Compile Include="Services\ICustomerService.cs" />
+    <Compile Include="Services\IDateTimeService.cs" />
+    <Compile Include="Services\IOrderService.cs" />
+    <Compile Include="Services\IShoppingCart.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\PayPalPaymentServiceProvider.cs" />
+    <Compile Include="Services\ShoppingCart.cs" />
+    <Compile Include="Services\SimulatedPaymentServiceProvider.cs" />
+    <Compile Include="ViewModels\AddressesVM.cs" />
+    <Compile Include="ViewModels\AddressVM.cs" />
+    <Compile Include="ViewModels\CustomersIndexVM.cs" />
+    <Compile Include="ViewModels\CustomersSearchVM.cs" />
+    <Compile Include="ViewModels\EditOrderVM.cs" />
+    <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\SignupVM.cs" />
+    <Compile Include="ViewModels\UpdateShoppingCartItemVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orchard.Autoroute\Orchard.Autoroute.csproj">
+      <Project>{66FCCD76-2761-47E3-8D11-B45D0001DDAA}</Project>
+      <Name>Orchard.Autoroute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Fields\Orchard.Fields.csproj">
+      <Project>{3787DDE5-E5C8-4841-BDA7-DCB325388064}</Project>
+      <Name>Orchard.Fields</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Users\Orchard.Users.csproj">
+      <Project>{79AED36E-ABD0-4747-93D3-8722B042454B}</Project>
+      <Name>Orchard.Users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194D3CCC-1153-474D-8176-FDE8D7D0D0BD}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

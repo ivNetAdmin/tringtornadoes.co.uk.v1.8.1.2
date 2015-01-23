@@ -1,0 +1,7 @@
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\bin\Debug\Orchard.Profile.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\bin\Debug\Orchard.Profile.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\bin\Debug\nunit.framework.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\obj\Debug\Orchard.Profile.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\obj\Debug\Orchard.Profile.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.Profile\obj\Debug\Orchard.Profile.pdb

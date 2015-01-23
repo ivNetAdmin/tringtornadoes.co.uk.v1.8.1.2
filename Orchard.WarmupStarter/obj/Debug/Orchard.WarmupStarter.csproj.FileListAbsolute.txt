@@ -1,0 +1,5 @@
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.pdb
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.dll
+C:\Users\Brian\Source\Repos\tringtornadoes.co.uk.v1.8.1.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.pdb
