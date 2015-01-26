@@ -123,6 +123,7 @@
     <Content Include="ivNet.TringTornadoes\Styles\Theme.min.css" />
     <Content Include="ivNet.TringTornadoes\Theme.png" />
     <Content Include="ivNet.TringTornadoes\Theme.txt" />
+    <Content Include="ivNet.TringTornadoes\Views\BadgeOfHonor.cshtml" />
     <Content Include="TheAdmin\Scripts\admin.js" />
     <Content Include="TheAdmin\Styles\ie.css" />
     <Content Include="TheAdmin\Styles\ie7.css" />
@@ -251,6 +252,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ivNet.TringTornadoes\Views\Content-url-contact-failed.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ivNet.TringTornadoes\Views\Content-url-where-we-play.Detail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

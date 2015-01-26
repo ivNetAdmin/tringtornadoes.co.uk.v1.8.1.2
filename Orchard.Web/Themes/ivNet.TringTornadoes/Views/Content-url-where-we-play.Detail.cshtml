@@ -1,0 +1,96 @@
+﻿@{
+    /* General script files
+    ***************************************************************/
+    Script.Require("jQuery").AtHead();
+    Script.Include("http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0");
+}
+@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null)
+    {
+        Layout.Title = Model.Title;
+    }
+
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<article class="content-item @contentTypeClassName">
+    <header>
+        @Display(Model.Header)
+        @if (Model.Meta != null)
+        {
+            <div class="metadata">
+                @Display(Model.Meta)
+            </div>
+        }
+    </header>
+
+    <div class="where-we-play-map-container corner-shade-2">
+        <div id="map"></div>
+    </div>
+    <p>
+        <br />
+        1. Tring School (U6 to U11)<br />
+        2. Tring Cricket Club (U12 to U13)<br />
+        3. Cow Lane (U14 to U15)<br />
+        4. Aldbury (U16)
+    </p>
+
+    @if (Model.Footer != null)
+    {
+        <footer>
+            @Display(Model.Footer)
+        </footer>
+    }
+</article>
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+    //<![CDATA[
+        $(document).ready(function () {
+
+            var locationLatList = new Array();
+            var locationLanList = new Array();
+
+            locationLatList[0] = 51.798587;
+            locationLanList[0] = -0.654620;
+            locationLatList[1] = 51.796188;
+            locationLanList[1] = -0.650286;
+            locationLatList[2] = 51.793365;
+            locationLanList[2] = -0.63812;
+            locationLatList[3] = 51.805636;
+            locationLanList[3] = -0.602029;
+
+            var map = null;
+
+            var lat = 51.79812;
+            var lng = -0.630053;
+
+            var map = null;
+
+            var mapOptions = {
+                credentials: "Al_p4aCFvHj9JXfZs5HAZq5G0iOv7r0N7352nB_s8O3E8U99CWAuEfIDE1j4K5io",
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                center: new Microsoft.Maps.Location(lat, lng),
+                zoom: 14,
+                width: 720,
+                height: 400
+            }
+
+            var map = new Microsoft.Maps.Map(document.getElementById("map"), mapOptions);
+
+            for (var i = 0; i < locationLatList.length; i++) {
+
+                // Create the locations
+                var location = new Microsoft.Maps.Location(locationLatList[i], locationLanList[i]);
+                var title = "";
+                if (locationLatList.length > 1) {
+                    title = (i + 1) + "";
+                }
+                var newPin = new Microsoft.Maps.Pushpin(location, { text: title });
+                map.entities.push(newPin);
+            }
+        });
+    //]]>
+    </script>
+}
